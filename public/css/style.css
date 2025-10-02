@@ -280,4 +280,14 @@ main .container{
     main .container .main-text h1{
         font-size: 3rem;
     }
+    
+    .casa .casa-text{
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .casa-text h2{
+        font-size: 2rem;
+    }
+ 
  }
