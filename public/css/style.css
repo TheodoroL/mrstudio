@@ -172,6 +172,37 @@ main .container{
 }
 
 
+.casa .container {
+    display: flex;
+    align-items: center;
+} 
+
+.casa .casa-img{
+    width: 50%;
+}
+
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.casa .casa-text{
+    width: 50%;
+    padding: 90px;
+}
+
+.casa-text h2{
+    font-size: 2.5em;
+}
+.casa-text p{
+    margin: 20px 0;
+    color: var(--color-p);
+}
+
+.casa .casa-text p b{
+    color: black;
+    font-size: 20px;
+}
 
 /* responsivel */
  @media(max-width: 960px){
@@ -231,6 +262,14 @@ main .container{
     }
     .diferenciais .card{
         width: 100%;
+    }
+    .casa .container{
+        flex-direction: column-reverse;
+    }
+    .casa .casa-text
+    , .casa .casa-img{
+        width: 100%;
+        text-align: center;
     }
  }
 
