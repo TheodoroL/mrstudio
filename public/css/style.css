@@ -31,6 +31,11 @@
     margin: 0 auto;
 }
 
+section{
+    padding: 2.7rem 0;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -107,6 +112,41 @@ main .container{
 }
 
 
+.resultados{
+    background-color: #FA8607;
+    color: var(--branco);
+}
+
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados .resultados-text{
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.resultados .resultados-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados .resultados-numeros p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px; 
+}
+.resultados .resultados-numeros p span{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+
 /* responsivel */
  @media(max-width: 960px){
     .menu-icon{
@@ -144,5 +184,28 @@ main .container{
     }
     main .container .main-text div{
         justify-content: center;
+    }
+
+    .resultados .container{
+        flex-direction: column;
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numeros{
+        width: 100%;
+        text-align: center;
+    
+    }
+
+    .resultados .resultados-numeros{
+        margin-top: 30px;
+    }
+ }
+
+ @media (max-width: 400px){
+    .resultados .resultados-numeros {
+        flex-direction: column;
+    }
+    main .container .main-text h1{
+        font-size: 3rem;
     }
  }
